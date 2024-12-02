@@ -648,6 +648,92 @@ n = 0
 #     )
 #     if x < y: return f(x + 3, y) + f(x // 2, y)
 # print(f(32, 14) * f(14, 1))
-x = 34
-x = str(x)
-print(int(max(x)))
+# x = 34
+# x = str(x)
+# print(int(max(x)))
+
+
+# def fn(n, m):
+#     return n % m == 0
+
+
+# arr = []
+# for A in range(1, 10000):
+#     k = 0
+#     for x in range(0, 10000):
+#         f = (A + x < 123) <= (fn(x, 5) <= (not(fn(x, 7))))
+#         if f == False:
+#             k += 1
+#             break
+#     if k== 0:
+#         print(A)
+#         break
+
+
+
+
+# arr = []
+# for A in range(0, 10000):
+#     k = 0
+#     for x in range(0, 10000):
+#         f = (x & 103 == 0) and (x & 94 != 0) <= (x & A != 0)
+#         if f == False:
+#             k += 1
+#             break
+#     if k== 0:
+#         print(A)
+#         break
+
+
+arr = []
+for A in range(0, 10000):
+    k = 0
+    for x in range(0, 10000):
+        f = (not((x & 103 == 0) and (x & 94 != 0)) or (x & A != 0))
+        if f == 0:
+            k += 1
+            break
+    if k== 0:
+        print(A)
+
+
+# arr = []
+# for x in [k * 0.25 for k in range(-1000000, 1000000)]:
+#     a = 0
+#     p = 10<=x<=21
+#     q = 13<=x<=38
+#     r = 18<=x<=25
+#     f = ((not(q) <= (p or r)) <= (not(a)) <= (not(q)))
+#     if f == 0:
+#         arr.append(x)
+# print(max(arr) - min(arr))
+# print(min(arr))
+
+# arr = []
+# for A in range(0, 7000):
+#     k = 0
+#     for x in range(0, 7000):
+#         for y in range(0, 7000):
+#             f = ((7 * y + 5 * x) < 1000) or (x < y) or (A < x)
+#             if f == False:
+#                 k += 1
+#                 break
+#     if k== 0:
+#         print(A)
+#         break
+
+# def fn(n, m):
+#     return n % m == 0
+
+
+# arr = []
+# for A in range(0, 10000):
+#     k = 0
+#     for x in range(0, 10000):
+#         f = (fn(x, 12) <= (not(fn(x, 90)) or ((x + 2 * A) >= 512)))
+#         if f == False:
+#             k += 1
+#             break
+#     if k== 0:
+#         print(A)
+#         break
